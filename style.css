@@ -1,66 +1,110 @@
+body {}
 
-body{
-  
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-  
+
 }
 
-.container{
+.container {
   width: 100%;
   min-height: 100vh;
-  background: #a7bcb9; 
+  background: #777e7d;
   padding: 2rem;
 
 }
-h1{
+
+h1 {
   margin-bottom: 1rem;
   text-align: center;
 
 }
-.row{
- display: flex;
- align-items: center;
- justify-content: space-between;
- border-radius: 30px;
- padding-left: 20px;
- margin-bottom: 25px;
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
 
 }
-.todo-app{
+
+.todo-app {
   text-align: left;
-  background: #e0ebeb; 
+  background: #e0ebeb;
   width: 100%;
   max-width: 540px;
   padding: 2rem;
   border-radius: 1.5rem;
   margin: 100px auto 20px;
-  
+
 }
-input{
+
+input {
   flex: 1;
-  border: none;
+  border: solid 1px #a7bcb9;
   outline: none;
   padding: 10px;
   border-radius: 2rem;
 }
 
-ul li{
+ul li {
   list-style: none;
   margin: 1.2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-button{
+
+button {
+  margin-top: 1rem;
+  font-weight: 600;
   outline: none;
-  border: none;
-  padding: 10px 50px;
-  background: #fff;
+  border: solid 1px #a7bcb9;
+  padding: 10px 30px;
+  background: #a7bcb9;
   border-radius: 2rem;
   margin-left: 15px;
 
+}
+
+button:hover {
+  background: #777e7d;
+  border: solid 1px black;
+
+}
+
+
+
+
+/* Styles for screens 1200px and larger (Extra Large devices) */
+@media (min-width: 700px) {
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+  }
+
+  input {
+    flex: 1;
+    border: solid 1px #bba7bc;
+    width:400px;
+    outline: none;
+    padding: 10px;
+    border-radius: 2rem;
+  }
+
+
+
+
+
+
+  /* Your styles for extra large screens go here */
 }
