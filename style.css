@@ -11,7 +11,7 @@ body {}
 .container {
   width: 100%;
   min-height: 100vh;
-  background: #777e7d;
+  background: #f3ad09e3;
   padding: 2rem;
 
 }
@@ -35,7 +35,7 @@ h1 {
 
 .todo-app {
   text-align: left;
-  background: #e0ebeb;
+  background: #9e8733;
   width: 100%;
   max-width: 540px;
   padding: 2rem;
@@ -59,6 +59,7 @@ ul li {
   position: relative;
   font-size: 1.15rem;
   padding-left: .5rem;
+  cursor: pointer;
 }
 
 ul li::before{
@@ -97,6 +98,7 @@ ul li span{
 }
 ul li span:hover{
   background: #a7bcb9;
+  cursor: pointer;
   border-radius: 50%;
 }
 
@@ -114,6 +116,7 @@ button {
 
 button:hover {
   background: #777e7d;
+  cursor: pointer;
 }
 
 
