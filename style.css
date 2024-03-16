@@ -48,7 +48,7 @@ input {
   flex: 1;
   border: solid 1px #a7bcb9;
   outline: none;
-  padding: 10px;
+  padding: 12px;
   border-radius: 2rem;
 }
 
@@ -65,7 +65,7 @@ ul li::before{
   content: '';
   position: absolute;
   height: 25px;
-  width: 28px;
+  width: 25px;
   border-radius: 50%;
   background-image: url(./images/unchecked.png);
   background-size: cover;
@@ -74,7 +74,31 @@ ul li::before{
   left: -2.20rem;
 
 }
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
 
+}
+ul li.checked::before{
+
+  background-image: url(./images/checked.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: -12px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+ul li span:hover{
+  background: #a7bcb9;
+  border-radius: 50%;
+}
 
 button {
   margin-top: 1rem;
